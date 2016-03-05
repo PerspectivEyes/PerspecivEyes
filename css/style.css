@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+nav.main {
+  /*width: 100%;*/
+  width: 80%;
+  background-color: white;
+  /*padding: 10px 0px;*/
+  padding: 10px 15%;
+  height: 40px;
+  display: table;
+  margin-bottom: 1px
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+nav img {
+  margin-left: 25px;
+  height: 40px;
+}
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 25px;
+}
+.items {
+  display: table-cell;
+  vertical-align: middle;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 18px;
+  color: #00404E;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li a:hover {
+  border-bottom: 2.5px solid #00A3B2;
+  color: #00A3B2;
+}
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+.main-text h6 {
+  font-size: 1.2em;
+}
+#main-content {
+  padding: 50px 0px;
+}
+iframe {
+  max-width: 95%;
+}
+.text-center {
+  text-align: center;
+}
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+.text-vcenter button {}
+.book-btn {
+  width: 120px;
+  height: 120px;
+  background-color: #00A3B4;
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+ padding: 0px 0px;
+ color: #fff;
+ text-align: center;
+ font-weight: 400;
+ line-height: normal;;
+ letter-spacing: normal;;
+ text-transform: none;
+ white-space: normal;
+text-decoration: none;
+ border: none;
+ cursor: pointer;
+  box-sizing: border-box;
+  /*-webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;*/
+}
+
+/*.book-btn:hover {
+    background-color: #00A3B4 !important;
+    text-decoration: none;
+}*/
+
+.footer {
+  width: 100%;
+  background-color: #F4F4F4;
+  padding: 20px 0px;
+}
+.footer i {
+  color: #00A3B4;
+  margin: 0px 10px;
+}
+.copyright {
+  background-color: #003F4E;
+  color: white;
+  padding: 10px 0px;
+
+}
+#appt-bg {
+  background: url('../images/appt-banner.png') no-repeat center center;
+  display: table;
+  color: #fff;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#contact input {
+  padding: 5px;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.image-container {
+  height: 900px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+}
+.services-logo {
+  width: 100%;
+  height: 100%;
+}
+.time {
+  margin-left: 15px;
+  display: inline;
+  font-weight: normal;
+}
+nav.sticky {
+  position: fixed;
+  z-index: 999;
+}
+video {
+  display: block;
+}
+#banner {
+  position: relative;
+  height: 100%;
+  max-height: 80%;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#banner .video {
+  min-width: 100%;
+  min-height: 70%;
+}
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+}
+.slicknav_menu {
+  display: none;
+}
+.image-banner {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-device-width: 1200px) {
+  #banner {
+    background: url('../images/appt-banner.png') no-repeat center center scroll;
+    background-size: cover;
+  }
+  .video {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+    background: none;
+  }
+}
+@media screen and (max-width: 1275px) {
+  #menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+    background: none;
+  }
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
