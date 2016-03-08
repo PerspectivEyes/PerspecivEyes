@@ -9,7 +9,6 @@ html, body {
 
 /* NAV */
 nav.main {
-
   height: 60px;
   background-color: #FFFFFF;
   border: 10px;
@@ -257,9 +256,8 @@ ul {
 
 @media only screen and (max-device-width: 1060px) {
   #banner {
-    background: url('../images/appt-banner.png') no-repeat center center scroll ;
+    background: url('../images/appt-banner.png') no-repeat center center scroll;
     background-size: 100%;
-    padding-top: 750px;
     zoom: 75%;
   }
   .video {
