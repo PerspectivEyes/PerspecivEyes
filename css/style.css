@@ -8,6 +8,9 @@ html, body {
 }
 
 /* NAV */
+#nav_top_buffer {
+  height:100px;
+}
 nav.main {
   height: 60px;
   background-color: #FFFFFF;
@@ -21,10 +24,6 @@ nav.main {
   top: 0;
   left: 0;
   z-index: 999;
-}
-nav img {
-  margin-left: 10px;
-  height: 40px;
 }
 nav ul {
   list-style-type: none;
@@ -86,12 +85,27 @@ nav.sticky {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  background-color: #FFFFFF;
+  height: 560px;
+}
+#banner-video {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#banner-video video {
+  width: 100%;
+  zoom: 50%;
   background-color: #000000;
 }
-#banner .video {
+#banner img {
+  background-position: center;
   width: 100%;
-  padding-top: 100px;
-  zoom: 50%;
+  background-size: cover;
 }
 #banner-text {
   position: absolute;
@@ -132,11 +146,17 @@ video {
 
 /* Text & Content */
 #main-content {
-  padding: 50px 0px;
+  margin-top: 50px;
+  padding: 40px 0px;
 }
 .main-text h6 {
-  padding: 0 5px;
+  padding: 0px 5px;
   font-size: 1.2em;
+  margin-bottom: 40px;
+}
+h3 {
+  margin-bottom: 65px;
+  color: #003F4E;
 }
 .text-center {
   text-align: center;
@@ -183,6 +203,7 @@ ul {
 .book-btn {
   width: 120px;
   height: 120px;
+  margin: 40px;
   background-color: #00A3B4;
   border-radius: 50%;
   color: #FFFFFF;
@@ -229,30 +250,35 @@ ul {
 .image-circle {
   border-radius: 50%;
 }
-.image-banner {
-  width: 100%;
-  height: 70%;
-  margin: 0;
-  padding: 0;
-}
-.footer {
+
+#footer {
   width: 100%;
   background-color: #F4F4F4;
-  padding: 20px 0px;
+  padding: 35px 0px;
 }
-.footer i {
-  color: #00A3B4;
+#footer i {
   margin: 0px 10px;
 }
-.footer i:hover {
-    color: #003F4E;
+.social [class*="fa fa-"] {
+  background-color: #00A3B4;
+  border-radius: 30px;
+  color: #FFFFFF;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin: auto 3px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
 }
-.copyright {
+.fa:hover { 
+  background-color: #003F4E; 
+}
+#copyright {
   background-color: #003F4E;
   color: white;
-  padding: 10px 0px;
+  padding: 8px 0px;
 }
-
 
 @media only screen and (max-device-width: 1060px) {
   #banner {
