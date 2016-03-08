@@ -2,17 +2,19 @@
 html, body {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #FFFFFF;
   font-family: "Montserrat";
   font-weight: 400;
 }
+
+/* NAV */
 nav.main {
-  /*width: 100%;*/
-  width: 80%;
-  background-color: white;
-  /*padding: 10px 0px;*/
-  padding: 10px 15%;
-  height: 40px;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 10px;
+  padding: 20px 15%;
+  
   display: table;
   margin-bottom: 1px
 }
@@ -23,7 +25,7 @@ nav.main {
   z-index: 999;
 }
 nav img {
-  margin-left: 25px;
+  margin-left: 10px;
   height: 40px;
 }
 nav ul {
@@ -31,13 +33,9 @@ nav ul {
   text-align: right;
   margin-right: 25px;
 }
-.items {
-  display: table-cell;
-  vertical-align: middle;
-}
 nav ul li {
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   color: #00404E;
   font-weight: 500;
   text-transform: uppercase;
@@ -51,24 +49,84 @@ nav ul li a:hover {
   border-bottom: 2.5px solid #00A3B2;
   color: #00A3B2;
 }
-ul {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
+.slicknav_menu {
+  display: none;
 }
-.main-text h6 {
-  font-size: 1.2em;
+nav.sticky {
+  position: fixed;
+  z-index: 999;
 }
-#main-content {
-  padding: 50px 0px;
+
+/* Banner */
+#banner {
+  position: relative;
+  height: 100%;
+  max-height: 80%;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#banner .video {
+  min-width: 100%;
+  max-width: 100%
+  min-height: 70%;
+  zoom: 60%;
+
+}
+#banner-text {
+  position: absolute;
+  top: 75%;
+  right: 13%;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%);
+  color: white;
+}
+
+/* Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px; 
+    margin-bottom: 30px;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
 }
 iframe {
   max-width: 95%;
 }
+video {
+  display: block;
+}
+
+/* Text & Content */
+#main-content {
+  padding: 50px 0px;
+}
+.main-text h6 {
+  font-size: 1.2em;
+}
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 .text-vcenter {
   display: table-cell;
@@ -79,36 +137,85 @@ iframe {
   font-weight: 600;
   font-size: 48px;
 }
-.text-vcenter button {}
+.text-vcenter button {
+}
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* Other Styling */
+.items {
+  display: table-cell;
+  vertical-align: middle;
+}
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 .book-btn {
   width: 120px;
   height: 120px;
   background-color: #00A3B4;
   border-radius: 50%;
-  font-size: 16px;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
- padding: 0px 0px;
- color: #fff;
- text-align: center;
- font-weight: 400;
- line-height: normal;;
- letter-spacing: normal;;
- text-transform: none;
- white-space: normal;
-text-decoration: none;
- border: none;
- cursor: pointer;
+  padding: 0px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: normal;
+  border: none;
   box-sizing: border-box;
-  /*-webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;*/
 }
-
-/*.book-btn:hover {
-    background-color: #00A3B4 !important;
-    text-decoration: none;
-}*/
-
+.book-btn:hover {
+    background-color: #003F4E !important;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+#appt-bg {
+  background: url('../images/appt-banner.png') no-repeat center center;
+  display: table;
+  color: #ffffff;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#contact input {
+  padding: 5px;
+}
+.services-logo {
+  width: 100%;
+  height: 100%;
+}
+.time {
+  margin-left: 15px;
+  display: inline;
+  font-weight: normal;
+}
+.image-circle {
+  border-radius: 50%;
+}
+.image-banner {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+}
 .footer {
   width: 100%;
   background-color: #F4F4F4;
@@ -122,81 +229,9 @@ text-decoration: none;
   background-color: #003F4E;
   color: white;
   padding: 10px 0px;
+}
 
-}
-#appt-bg {
-  background: url('../images/appt-banner.png') no-repeat center center;
-  display: table;
-  color: #fff;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#contact input {
-  padding: 5px;
-}
-.img-circle {
-  border-radius: 50%;
-}
-.image-container {
-  height: 900px;
-  overflow: hidden;
-}
-.image-container img {
-  width: 100%;
-}
-.services-logo {
-  width: 100%;
-  height: 100%;
-}
-.time {
-  margin-left: 15px;
-  display: inline;
-  font-weight: normal;
-}
-nav.sticky {
-  position: fixed;
-  z-index: 999;
-}
-video {
-  display: block;
-}
-#banner {
-  position: relative;
-  height: 100%;
-  max-height: 80%;
-  box-sizing: border-box;
-  overflow: hidden;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-#banner .video {
-  min-width: 100%;
-  min-height: 70%;
-}
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: white;
-}
-.slicknav_menu {
-  display: none;
-}
-.image-banner {
-  width: 100%;
-  height: 70%;
-  margin: 0;
-  padding: 0;
-}
+
 @media only screen and (max-device-width: 1200px) {
   #banner {
     background: url('../images/appt-banner.png') no-repeat center center scroll;
@@ -213,6 +248,7 @@ video {
     background: none;
   }
 }
+
 @media screen and (max-width: 1275px) {
   #menu {
     display: none;
