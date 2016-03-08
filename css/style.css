@@ -9,9 +9,7 @@ html, body {
 
 /* NAV */
 nav.main {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  max-width: 940px;
   height: 60px;
   background-color: #FFFFFF;
   border: 10px;
@@ -32,7 +30,7 @@ nav img {
 nav ul {
   list-style-type: none;
   text-align: right;
-  margin-right: 25px;
+  margin-right: 0px;
 }
 nav ul li {
   display: inline-block;
@@ -40,7 +38,8 @@ nav ul li {
   color: #00404E;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 0px 10px;
+  padding: 0px 0px 0px 20px;
+  text-align: right;
 }
 nav ul li a {
   text-decoration: none;
@@ -50,18 +49,39 @@ nav ul li a:hover {
   border-bottom: 2.5px solid #00A3B2;
   color: #00A3B2;
 }
+nav.sticky {
+  position: relative;
+  width: 70%;
+  z-index: 999;
+}
 .slicknav_menu {
   display: none;
 }
-nav.sticky {
-  position: fixed;
-  z-index: 999;
+.slicknav_btn{
+  margin:5px 5px 6px;
+  text-decoration:none;
+  text-shadow:0 1px 1px rgba(255,255,255,.75);
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  background-color:#222
+}
+.slicknav_btn{
+  position: relative;
+  display:block;
+  vertical-align:middle;
+  float:right;
+  padding:.438em .625em;
+  line-height:1.125em
+}
+.slicknav_nav .slicknav_row,.slicknav_nav a{
+  padding:5px 0px 5px 10px;
+  margin:2px 5px
 }
 
 /* Banner */
 #banner {
   position: relative;
-  /*max-height: 80%;*/
   box-sizing: border-box;
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
@@ -70,19 +90,16 @@ nav.sticky {
   background-color: #000000;
 }
 #banner .video {
-  padding-top: 200px;
   width: 100%;
-  /*min-height: 70%;*/
   zoom: 50%;
-
 }
 #banner-text {
   position: absolute;
-  top: 70%;
-  right: 13%;
-  -webkit-transform: translateY(-70%);
-  -ms-transform: translateY(-70%);
-  transform: translateY(-70%);
+  top: 73%;
+  right: 15%;
+  -webkit-transform: translateY(-73%);
+  -ms-transform: translateY(-73%);
+  transform: translateY(-73%);
   color: #FFFFFF;
 }
 
@@ -237,11 +254,11 @@ ul {
 }
 
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-device-width: 1060px) {
   #banner {
-    padding-top: 750px;
-    background: url('../images/appt-banner.png') no-repeat center center scroll;
-    background-size: cover;
+    padding-top: 450px;
+    background: url('../images/appt-banner.png') no-repeat center center scroll ;
+    background-size: 100%;
     zoom: 75%;
   }
   .video {
@@ -256,7 +273,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1060px) {
   #menu {
     display: none;
   }
