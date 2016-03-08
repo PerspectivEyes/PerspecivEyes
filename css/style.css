@@ -9,7 +9,7 @@ html, body {
 
 /* NAV */
 nav.main {
-  max-width: 940px;
+
   height: 60px;
   background-color: #FFFFFF;
   border: 10px;
@@ -50,7 +50,7 @@ nav ul li a:hover {
   color: #00A3B2;
 }
 nav.sticky {
-  position: relative;
+  position: fixed;
   width: 70%;
   z-index: 999;
 }
@@ -91,6 +91,7 @@ nav.sticky {
 }
 #banner .video {
   width: 100%;
+  padding-top: 100px;
   zoom: 50%;
 }
 #banner-text {
@@ -256,9 +257,9 @@ ul {
 
 @media only screen and (max-device-width: 1060px) {
   #banner {
-    padding-top: 450px;
     background: url('../images/appt-banner.png') no-repeat center center scroll ;
     background-size: 100%;
+    padding-top: 750px;
     zoom: 75%;
   }
   .video {
